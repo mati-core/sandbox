@@ -20,7 +20,7 @@ class Bootstrap
 	 */
 	public static function boot(): Configurator
 	{
-		$appDir = dirname(__DIR__);
+		$appDir = __DIR__; /* For future update dirname(__DIR__); */
 
 		new PackageRegistrator(
 			$appDir,    // root path
