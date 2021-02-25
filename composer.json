@@ -3,16 +3,8 @@
 	"description": "Mati-Core nette sandbox",
 	"homepage": "https://nette.org",
 	"type": "project",
-	"license": ["BSD-3-Clause", "GPL-2.0-only", "GPL-3.0-only"],
+	"license": "MIT",
 	"authors": [
-		{
-			"name": "David Grudl",
-			"homepage": "https://davidgrudl.com"
-		},
-		{
-			"name": "Nette Community",
-			"homepage": "https://nette.org/contributors"
-		},
 		{
 			"name": "Ing. Martin Olmr",
 			"homepage": "https://martinolmr.cz"
