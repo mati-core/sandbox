@@ -19,7 +19,7 @@ application:
 
 orm.annotations:
    paths:
-      App\Model\Entity: %appDir%/model/Entity
+      App\Model\Entity: %appDir%/Model/Entity
 
 session:
 	expiration: 14 days

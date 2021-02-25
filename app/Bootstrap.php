@@ -23,8 +23,8 @@ class Bootstrap
 		$appDir = __DIR__; /* For future update dirname(__DIR__); */
 
 		new PackageRegistrator(
-			$appDir,    // root path
-			$appDir . '/temp' // temp path
+			$appDir . '/../',    // root path
+			$appDir . '/../temp' // temp path
 		);
 
 		$configurator = new Configurator;
