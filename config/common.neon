@@ -1,0 +1,48 @@
+parameters:
+	rootDir: %appDir%/..
+	mjml:
+		applicationID: ''
+		publicKey: ''
+		secretKey: ''
+	mail:
+		smtp: true
+		host: ''
+		port: 465
+		username: ''
+		password: ''
+		secure: ssl
+
+application:
+	errorPresenter: Error
+	mapping:
+		*: App\*Module\Presenters\*Presenter
+
+orm.annotations:
+   paths:
+      App\Model\Entity: %appDir%/model/Entity
+
+session:
+	expiration: 14 days
+
+baraja.database:
+   connection:
+      host: 127.0.0.1
+      dbname: sandbox
+      user: root
+      password: root
+
+translation:
+    locales:
+        whitelist: [en, cs]
+        default: cs
+        fallback: [cs_CS]
+    dirs:
+        - %appDir%/Lang
+    localeResolvers:
+        - Contributte\Translation\LocalesResolvers\Session
+
+services:
+	router: App\Router\RouterFactory::createRouter
+
+extensions:
+	translation: Contributte\Translation\DI\TranslationExtension
