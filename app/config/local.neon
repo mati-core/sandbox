@@ -1,1 +1,6 @@
-parameters:
+baraja.database:
+	connection:
+		host: "127.0.0.1"
+		dbname: dbname
+		user: root
+		password: root
