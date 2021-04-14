@@ -57,7 +57,7 @@ abstract class BasePresenter extends Presenter
 	 */
 	public function getLocales(): array
 	{
-		/** @phpstan-skip-next-line */
+		/** @phpstan-ignore-next-line */
 		return $this->translator->getLocalesWhitelist();
 	}
 
@@ -66,7 +66,7 @@ abstract class BasePresenter extends Presenter
 	 */
 	public function getDefaultLocale(): string
 	{
-		/** @phpstan-skip-next-line */
+		/** @phpstan-ignore-next-line */
 		return $this->translator->getDefaultLocale();
 	}
 
